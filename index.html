@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h2 id="Title">Christian Gillies</h2>
+    <p id = "Contact">945 East 55th Street Brooklyn, NY | Home: 718-444-8285 | Cell: 917-974-5507 </p>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#hammericon_begin
+{
+    width: 5%;
+    height: 5%;
+    padding-right: 8px;
+}
+#hammericon_end
+{    width: 5%;
+    height: 5%;
+    padding-left: 8px;
+}
+#subtext
+{
+    font-size: 6;
+    color: azure;
+}
+#menuheader
+{
+    position: relative;
+    text-align: center;
+}
+#Title {
+    position: center;
+    text-align: center;
+    padding: 14px 16px;
+    color: blue;
+}
+#Contact {
+    position: center;
+    text-align: center;
+    padding: 14px 16px;
+    color: blue;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+ 
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<!---<h2>Search Menu</h2>---> 
+<!---<p>Start to type for a specific category inside the search bar to "filter" the search options.</p>--->
+
+<div class="row">
+  <div class="left" style="background-color:rgb(243, 0, 0);">
+    <h2 id = menuheader style="color: #ddd;"><img id="hammericon_begin" src="Hammer_icon.PNG"></img>Projects<img id="hammericon_end" src="Hammer_icon.PNG"></img></h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li id ="li1"><a onmouseover="show(1)" href="https://replit.com/@chrisgi/Thaco-Calculator#main.cpp">Thaco-Calculator</a></li>
+      <li id ="li2"><a onmouseover="show(2)" href="https://github.com/christo480/Statblock-Image-Extraction">5e Statblock-Image-Extraction</a></li>
+      <li><a onclick="show(2)" href="#">Project 3</a></li>
+      <li><a href="#">Project 4</a></li>
+      <li><a href="#">Project 5</a></li>
+      <li><a href="#">Project 6</a></li>
+      <li><a href="#">Project 7</a></li>
+      <li><a href="#">Project 8</a></li>
+      <li><a href="#">Project 9</a></li>
+    </ul>
+  </div>
+  
+  <div class="right" style="background-color:rgb(182, 182, 182);">
+    <h2 id=description>Description</h2>
+    <p class="right-content"></p>
+
+  </div>
+</div>
+
+<script>
+
+element =document.querySelector("li1")
+element.addEventListener("onhover", show(1))
+element =document.querySelector("li2")
+element.addEventListener("onhover", show(2))
+
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+function show(num)
+{
+    if(num==1)
+    {
+        document.getElementById("description").innerHTML="C++ Thaco Calculator <p id= subtext></p>";
+    }
+    if(num==2)
+    {
+        document.getElementById("description").innerHTML="5e Statblock img parse project. <p id= subtext>Used to import homebrew into 5e DMing tools</p>";
+    }
+    if(num==-1)
+    {
+        document.getElementById("description").innerHTML="5e Statblock img parse project. <p id= subtext>Used to import homebrew into 5e DMing tools</p>";
+    }
+
+}
+</script>
+
+</body>
+</html>
