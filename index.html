@@ -21,7 +21,7 @@
 <head>
   <div class="container p-5 my-5 bg-dark text-white">
     <h2 id="Title">Christian Gillies</h2>
-    <p id = "Contact">adress | Home: number | Cell: number </p>
+    <p id = "Contact">address | Home: number | Cell: number </p>
   </div>
 <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -118,24 +118,33 @@ body {
 
 <div class="row">
   <div class="left" style="background-color:rgb(190, 190, 190);">
-    <h2 id = menuheader style="color: rgb(0, 0, 0);"><img id="hammericon_begin" src="Hammer_icon.PNG"></img>Projects<img id="hammericon_end" src="Hammer_icon.PNG"></img></h2>
+    <h2 id = menuheader class=".container" style="color: rgb(0, 0, 0);"><img id="hammericon_begin" src="Hammer_icon.PNG"></img>Projects<img id="hammericon_end" src="Hammer_icon.PNG"></img></h2>
     <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
     <ul id="myMenu">
-      <li id ="li1"><a onmouseover="show(1)" onmouseout="show(-1)" href="https://replit.com/@chrisgi/Thaco-Calculator#main.cpp">Thaco-Calculator</a></li>
-      <li id ="li2"><a onmouseover="show(2)" onmouseout="show(-1)" href="https://github.com/christo480/Statblock-Image-Extraction">5e Statblock-Image-Extraction</a></li>
-      <li><a onclick="show(2)" href="#">Project 3</a></li>
-      <li><a href="#">Project 4</a></li>
-      <li><a href="#">Project 5</a></li>
-      <li><a href="#">Project 6</a></li>
-      <li><a href="#">Project 7</a></li>
-      <li><a href="#">Project 8</a></li>
-      <li><a href="#">Project 9</a></li>
+      <li id ="li1" class="container"><a onmouseover="show(1)" onmouseout="show(-1)" href="https://replit.com/@chrisgi/Thaco-Calculator#main.cpp">Thaco-Calculator</a></li>
+      <li id ="li2" class="container"><a onmouseover="show(2)" onmouseout="show(-1)" href="https://github.com/christo480/Statblock-Image-Extraction">5e Statblock-Image-Extraction</a></li>
+      <li class="container"><a onclick="show(2)" href="#">Project 3</a></li>
+      <li class="container"><a href="#">Project 4</a></li>
+      <li class="container"><a href="#">Project 5</a></li>
+      <li class="container"><a href="#">Project 6</a></li>
+      <li class="container"><a href="#">Project 7</a></li>
+      <li class="container"><a href="#">Project 8</a></li>
+      <li class="container"><a href="#">Project 9</a></li>
     </ul>
   </div>
   
   <div class="right" style="background-color:rgb(182, 182, 182);">
-    <div class=".container-sm">
-      <h2 id=description>Description</h2>
+    <div class="card">
+      <p class="container" id=description_title>
+        Title.
+      </p>
+        <div class="card-body">
+          <p class="container" id=description>
+            Description.
+          </p>
+        </div>
+      </p>
+
     </div>
     <p class="right-content"></p>
 
@@ -168,14 +177,18 @@ function show(num)
 {
     if(num==1)
     {
-        document.getElementById("description").innerHTML="C++ Thaco Calculator <p id= subtext></p>";
+        document.getElementById("description_title").innerHTML="C++ Thaco Calculator";
+        document.getElementById("description").innerHTML="Thaco Calculator";
+        // document.getElementById("description").innerHTML+="<input type="text" id="thaco" name="name">;"; 
     }
     if(num==2)
     {
-        document.getElementById("description").innerHTML="5e Statblock img parse project. <p id= subtext>Used to import homebrew into 5e DMing tools</p>";
+        document.getElementById("description_title").innerHTML="5e Statblock Image Parse Project";
+        document.getElementById("description").innerHTML="Used to import homebrew into 5e DMing tools";
     }
     if(num==-1)
     {
+        document.getElementById("description_title").innerHTML="<p id= subtext></p>";
         document.getElementById("description").innerHTML="";
     }
 
