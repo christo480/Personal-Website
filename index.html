@@ -123,7 +123,7 @@ body {
     <ul id="myMenu">
       <li id ="li1" class="container"><a onmouseover="show(1)" onmouseout="show(-1)" href="https://replit.com/@chrisgi/Thaco-Calculator#main.cpp">Thaco-Calculator</a></li>
       <li id ="li2" class="container"><a onmouseover="show(2)" onmouseout="show(-1)" href="https://github.com/christo480/Statblock-Image-Extraction">5e Statblock-Image-Extraction</a></li>
-      <li class="container"><a onclick="show(2)" href="#">Project 3</a></li>
+      <li class="container"><a a onmouseover="show(3)" onmouseout="show(-1)" href="DATASCI PROJECT/Data_Sci_project.html">"Crime On Rails" Project</a></li>
       <li class="container"><a href="#">Project 4</a></li>
       <li class="container"><a href="#">Project 5</a></li>
       <li class="container"><a href="#">Project 6</a></li>
@@ -185,6 +185,11 @@ function show(num)
     {
         document.getElementById("description_title").innerHTML="5e Statblock Image Parse Project";
         document.getElementById("description").innerHTML="Used to import homebrew into 5e DMing tools";
+    }
+    if(num==3)
+    {
+        document.getElementById("description_title").innerHTML="Data Science Course Project";
+        document.getElementById("description").innerHTML="Uses NYC Open data to attempt to determine if arrests cluster around stations.";
     }
     if(num==-1)
     {
