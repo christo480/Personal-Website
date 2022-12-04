@@ -1,0 +1,6 @@
+{
+    "Name" : "Revenge",
+    "Source of Inspiration" : "Served Cold. You draw inspiration from the wails of those who have wronged you. You gain inspiration whenever you outwit a foe without the use of Deception or Persuasion checks. Successfully attack a surprised opponent, lead a foe into a prepared trap, trick an enemy into harming themselves or greatly benefiting you.",
+    "Inspiration Feature": "Cloak and Dagger. You know how to avert suspicion when danger closes in. Whenever you or an ally you can see fail a Sleight of Hand or Stealth check, you can use your reaction to spend your inspiration and undo any consequences of that failed check.",
+    "Fulfillment Feature" :"Retaliatory Reputation. It has become apparent that wronging you is decidedly unwise and those without a death wish instinctively fear you. While you are not incapacitated, you can use a bonus action to direct a threatening stare at any hostile creature within 20 feet of you. The creature must make a Wisdom saving throw with a DC equal to your passive Intimidation score. On a failure, the creature is frightened until the end of its next turn. A creature that succeeds on its saving throw is immune to your Retaliatory Reputation for the next 24 hours."
+}
