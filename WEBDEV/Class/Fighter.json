@@ -1,0 +1,54 @@
+{
+    "Name":"Bard",
+    "HitDie": 10,
+    "Proficiencies":
+    {
+        "Armor": "Light armor, medium armor, heavy armor, shields",
+        "Weapons":"Simple weapons, martial weapons",
+        "Tools": "None",
+        "Saving Throws":"Strength, Constitution",
+        "Skills":"Choose two from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival"
+
+    },
+    "Equipment":
+    {
+        "Gold": 140,
+        "Sets": 
+        {
+            "Brigand’s Set":
+            {
+                "Cost":114,
+                "Contents":"2 dueling daggers, garrotte, rapier, 5 throwing daggers, leather brigandine, burglar’s pack, vial of basic poison"
+            },
+            "Guard’s Set":
+            {
+                "Cost":107,
+                "Contents":"Longbow and 20 arrows, pike, shortsword, medium shield, padded leather, backpack, bell, lantern (standard), manacles, signal whistle"
+            },
+            "Scout’s Set":
+            {
+                "Cost":117,
+                "Contents":"Greatsword, 4 javelins, hide, medium shield, climbing gear, explorer’s pack"
+            },
+            "Squire’s Set":
+            {
+                "Cost":128,
+                "Contents":"Greatsword, 4 javelins, hide, medium shield, climbing gear, explorer’s pack"
+            }
+        }
+    },
+    "Features":
+    {
+        "1":
+        {
+            "Fighting Style":
+            {
+                "Choices":
+                {
+                    "ARCHERY":"You gain a +2 bonus to attack rolls you make with ranged weapons.",
+                    "BATTLE READY":"You may activate up to 2 combat stances you know without expending any exertion points using the same bonus action. Once you activate a set of combat stances in this way you can’t use this feature again until you finish a short or long rest ."
+                }
+            }
+        }
+    }
+}
