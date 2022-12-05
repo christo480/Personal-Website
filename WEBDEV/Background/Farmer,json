@@ -1,5 +1,12 @@
 {
     "Name":"Farmer",
-    "Ability Score Increase":"Wisdom"
-
+    "Ability Score Increase":"Wisdom",
+    "Tool Proficiencies": "Land vehicles.",
+    "Suggested Equipment": 
+    {
+        "Cost":17,
+        "Contents":"Common clothes, shovel, mule with saddlebags, 5 Supply."
+    },
+    "Feature": "Bit and Bridle. You know how to stow and transport food. You and one animal under your care can each carry additional Supply equal to your proficiency bonus.",
+    "Adventures and Advancement.": "You left the farm for a reason but you still have an eye for land. If you acquire farming property, estates, or domains, you can earn twice as much as you otherwise would from their harvests, or be supported by your lands at a lifestyle one level higher than you otherwise would be."
 }
