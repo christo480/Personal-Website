@@ -1,0 +1,6 @@
+{
+    "Name" : "Chaos",
+    "Source of Inspiration" : "Chaos. You sow disorder, play tricks, and subvert tradition. You gain inspiration whenever you successfully subvert law and order, so long as it benefits your allies or moves the story forward.",
+    "Inspiration Feature": "Ingenious Doubletalk. Undaunted by momentary setbacks, you twist conversations in any direction with an inspired turn of phrase and confusing doubletalk that plays off bold lies and impertinent proposals as jokes, obfuscates or redirects accidentally slipped information, or quells outrage with diffusing flattery. Whenever you or a friendly creature you can hear fails a Deception or a Persuasion check, you can use your reaction to spend your inspiration and undo any consequences of that failed check.",
+    "Fulfillment Feature" :"Agent of Chaos. The whims of chaos flow through you and everything you do. Whenever you roll one or more dice to determine the damage of an attack or spell or the random effects of a spell or feature, you may choose to reroll those dice; if you do you must use the new rolls.In addition, you gain the Chaotic alignment and emit a strong chaotic aura for the purposes of any feature, spell, or trait that detects or affects Chaotic creatures."
+}
