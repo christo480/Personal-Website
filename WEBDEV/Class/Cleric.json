@@ -1,0 +1,55 @@
+{
+    "Name":"Cleric",
+    "HitDie": 8,
+    "Proficiencies":
+    {
+        "Armor": "None",
+        "Weapons":"Simple weapons",
+        "Tools": "Choose one from herbalism kit, an artisan tool, or a musical instrument",
+        "Saving Throws":"Wisdom, and either Intelligence or Charisma",
+        "Skills":" Choose two from Culture, History, Insight, Medicine, Persuasion, and Religion"
+
+    },
+    "Equipment":
+    {
+        "Gold": 125,
+        "Sets": 
+        {
+            "Holy Warrior’s Set":
+            {
+                "Cost":122,
+                "Contents":"Longbow and 20 arrows, mace, scale mail, explorer’s pack, reliquary divine focus (holy symbol)"
+            },
+            "Righteous Combat Set":
+            {
+                "Cost":87,
+                "Contents":"4 javelin, warhammer, 5 wooden stakes, chain shirt, medium shield, emblem divine focus (holy symbol), explorer’s pack"
+            },
+            "Spiritual Protector’s Set":
+            {
+                "Cost":90,
+                "Contents":"Quarterstaff, 2 flasks of holy water, padded leather, healer’s satchel, amulet divine focus (holy symbol), priest’s pack"
+            }
+        }
+    },
+    "Features":
+    {
+        "1":
+        {
+            "ARCHETYPE":
+            {
+                "Healer":
+                {
+                    "Heal Up":"Starting at 1st level when you choose this archetype, you may add your Wisdom modifier to the hit points restored by healing spells of 1st-level or higher.",
+                    "Small Mercy":"Also at 1st level, you’re given the power to improve the chances of allies wounded on the battlefield. You learn the spare the dying cantrip. This does not count against your number of known cantrips."
+                }
+                
+            }
+
+        },
+        "2":
+        {
+            "Better Than Cure":"Beginning at 2nd level, you may interject to prevent harm to your allies. When an ally within 30 feet of you is hit with an attack that deals nonmagical bludgeoning, piercing, or slashing damage, you may use your reaction to halve the damage. At 8th level, you may negate all of the attack’s damage. Once you have used this feature a number of times equal to your proficiency bonus, you can’t do so again until you finish a long rest ."
+        }
+    }
+}
