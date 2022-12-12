@@ -1,0 +1,6 @@
+{
+    "Name" : "Excellence",
+    "Source of Inspiration" : "Failure. Every failed attempt is a chance for growth and each time you fall you stand up stronger. You gain inspiration whenever the Narrator calls for you to make an ability check, attack roll, or saving throw and the final result of the d20 roll is a natural 1.",
+    "Inspiration Feature": "Practiced Edge. A perfected technique is often the difference between victory and defeat. After you roll an ability check, attack roll, or saving throw but before you know the outcome, you may spend your inspiration to add a +5 bonus to that roll.",
+    "Fulfillment Feature" :"A Technique Perfected: You have achieved the apex in at least some small area of mortal ability. Choose an ability score, combat tradition, or school of magic. Ability Score: When you make an ability check using the chosen ability score and can add your proficiency bonus, you gain an expertise die. Combat Tradition: Attacks you make using combat maneuvers from this tradition gain a +2 bonus to attack and damage rolls. School of Magic: When you cast a spell from this school of magic, your spell save DC is treated as 2 higher and you gain a +2 bonus on any spell attack roll it requires."
+}
