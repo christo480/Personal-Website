@@ -24,16 +24,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
-<!---<h2>Search Menu</h2>---> 
-<!---<p>Start to type for a specific category inside the search bar to "filter" the search options.</p>--->
-  
-<div class="container-lg p-5 my-5 bg-grey text-black">
-  <div>
-    <h2 id="Title" font="Consolas">Christian Gillies</h2>
-    <p id = "Contact">address | Home: number | Cell: number </p>
-  </div>
-  <div class="container-md">
+<!-- <div class="container-md">
     <div class="container-lg" style="background-color:rgb(182, 182, 182);">
       <div class="card" style="padding: 2%;">
         <p class="container" id=description_title>
@@ -49,26 +40,59 @@
       </div>
       <p class="right-content"></p>
 
-  </div>
+  </div> -->
 
-<div class="row">
-  <div class="left" style="background-color:rgb(190, 190, 190);">
-    <!---<h2 id = menuheader class=".container" style="color: rgb(0, 0, 0);"><img id="hammericon_begin" src="Hammer_icon.PNG"></img>Projects<img id="hammericon_end" src="Hammer_icon.PNG"></img></h2>--->
-    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
-    <ul id="myMenu">
-      <li id ="li1" class="container"><a onmouseover="show(1)" onmouseout="show(-1)" href="https://replit.com/@chrisgi/Thaco-Calculator#main.cpp">Thaco-Calculator</a></li>
-      <li id ="li2" class="container"><a onmouseover="show(2)" onmouseout="show(-1)" href="https://github.com/christo480/Statblock-Image-Extraction">5e Statblock-Image-Extraction</a></li>
-      <li class="container"><a onmouseover="show(3)" onmouseout="show(-1)" href="DATASCI PROJECT/Data_Sci_project.html">"Crime On Rails" Project</a></li>
-      <li class="container"><a href="WEBDEV/json_gallery.html">Json Host</a></li>
-      <li class="container"><a href="#">Project 5</a></li>
-      <li class="container"><a href="#">Project 6</a></li>
-      <li class="container"><a href="#">Project 7</a></li>
-      <li class="container"><a href="#">Project 8</a></li>
-      <li class="container"><a href="#">Project 9</a></li>
-    </ul>
-  </div>
-</div>
+<div id="frame">
+  <!--- 
+  Contact Info
+  --->
+  <main> 
+    <div class="container-lg p-5 my-5 bg-grey text-black">
+      <div>
+        <h2 id="Title" font="Consolas">Christian Gillies</h2>
+        <p id = "Contact">address | Home: number | Cell: number </p>
+      </div>
+      <div class="tab-content">
+        <p>your text goes here</p>
+      </div>
+  </main> 
+    
   
+  
+  <!--- 
+    PROJECT LIST
+    --->
+  <main>
+    <div class="row">
+      <div class="left" style="background-color:rgb(190, 190, 190);" >
+        <!---<h2 id = menuheader class=".container" style="color: rgb(0, 0, 0);"><img id="hammericon_begin" src="Hammer_icon.PNG"></img>Projects<img id="hammericon_end" src="Hammer_icon.PNG"></img></h2>--->
+        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." font="monospace" title="Type in a category">
+        <ul id="myMenu">
+          <li id ="li1" class="container"><a onmouseover="show(1)" onmouseout="show(-1)" href="https://replit.com/@chrisgi/Thaco-Calculator#main.cpp">
+            <details open>
+              <summary>Thaco-Calculator</summary>
+              <div class="tab-content">
+                <p>Thaco Calculator</p>
+              </div>
+            </details></a></li>
+          <li id ="li2" class="container"><a onmouseover="show(2)" onmouseout="show(-1)" href="https://github.com/christo480/Statblock-Image-Extraction"><details open>
+            <summary>5e Statblock-Image-Extraction</summary>
+            <div class="tab-content">
+              <p>An attempt to use text recognition to process 5e statblock</p>
+            </div>
+          </details></a></li>
+          <li class="container"><a onmouseover="show(3)" onmouseout="show(-1)" href="DATASCI PROJECT/Data_Sci_project.html">"Crime On Rails" Project</a></li>
+          <li class="container"><a href="WEBDEV/json_gallery.html">Json Host</a></li>
+          <li class="container"><a href="#">Project 5</a></li>
+          <li class="container"><a href="#">Project 6</a></li>
+          <li class="container"><a href="#">Project 7</a></li>
+          <li class="container"><a href="#">Project 8</a></li>
+          <li class="container"><a href="#">Project 9</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</div>
  <!--- <div class="right-most" style="background-color:rgb(182, 182, 182);">
     <h2 id=description>Description</h2>
     <p class="right-content"></p>
@@ -93,31 +117,31 @@ function myFunction() {
     }
   }
 }
-function show(num)
-{
-    if(num==1)
-    {
-        document.getElementById("description_title").innerHTML="C++ Thaco Calculator";
-        document.getElementById("description").innerHTML="Thaco Calculator";
-        // document.getElementById("description").innerHTML+="<input type="text" id="thaco" name="name">;"; 
-    }
-    if(num==2)
-    {
-        document.getElementById("description_title").innerHTML="5e Statblock Image Parse Project";
-        document.getElementById("description").innerHTML="Used to import homebrew into 5e DMing tools";
-    }
-    if(num==3)
-    {
-        document.getElementById("description_title").innerHTML="Data Science Course Project";
-        document.getElementById("description").innerHTML="Uses NYC Open data to attempt to determine if arrests cluster around stations.";
-    }
-    if(num==-1)
-    {
-        document.getElementById("description_title").innerHTML="<p id= subtext></p>";
-        document.getElementById("description").innerHTML="";
-    }
+// function show(num)
+// {
+//     if(num==1)
+//     {
+//         document.getElementById("description_title").innerHTML="C++ Thaco Calculator";
+//         document.getElementById("description").innerHTML="Thaco Calculator";
+//         // document.getElementById("description").innerHTML+="<input type="text" id="thaco" name="name">;"; 
+//     }
+//     if(num==2)
+//     {
+//         document.getElementById("description_title").innerHTML="5e Statblock Image Parse Project";
+//         document.getElementById("description").innerHTML="Used to import homebrew into 5e DMing tools";
+//     }
+//     if(num==3)
+//     {
+//         document.getElementById("description_title").innerHTML="Data Science Course Project";
+//         document.getElementById("description").innerHTML="Uses NYC Open data to attempt to determine if arrests cluster around stations.";
+//     }
+//     if(num==-1)
+//     {
+//         document.getElementById("description_title").innerHTML="<p id= subtext></p>";
+//         document.getElementById("description").innerHTML="";
+//     }
 
-}
+// }
 </script>
 
 </body>
